@@ -36,11 +36,11 @@ namespace CalendarApp
             // 
             this.lblDays.AutoSize = true;
             this.lblDays.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblDays.Location = new System.Drawing.Point(14, 27);
+            this.lblDays.Location = new System.Drawing.Point(3, 4);
             this.lblDays.Name = "lblDays";
-            this.lblDays.Size = new System.Drawing.Size(66, 19);
+            this.lblDays.Size = new System.Drawing.Size(56, 19);
             this.lblDays.TabIndex = 1;
-            this.lblDays.Text = "Geçiciv2";
+            this.lblDays.Text = "Günler";
             // 
             // UserControlDays
             // 
@@ -53,7 +53,6 @@ namespace CalendarApp
             this.Load += new System.EventHandler(this.UserControlDays_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

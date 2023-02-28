@@ -21,8 +21,15 @@ namespace CalendarApp
         {
 
         }
-        public void days(int numday)
+        DateTime now = DateTime.Now;
+        
+        public void days(int numday, int numMonth, int numYear)
         {
+            if(numday == now.Day && numMonth == now.Month && numYear == now.Year)
+            {
+                this.lblDays.ForeColor = Color.DarkSeaGreen;
+                this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            }
             lblDays.Text = numday + "";
         }
     }

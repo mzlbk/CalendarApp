@@ -13,17 +13,15 @@ namespace CalendarApp
 {
     public partial class frmMain : Form
     {
-        int month, year;
+        int month, year, mouseX, mouseY;
         public frmMain()
         {
             InitializeComponent();
         }
-
         private void frmMain_Load(object sender, EventArgs e)
         {
             displayDays();
         }
-
 
         //Form Yüklenirken Load Etme
         public void displayDays()
@@ -44,7 +42,7 @@ namespace CalendarApp
             for(int i = 1; i<=days; i++)
             {
                 UserControlDays ucdays = new UserControlDays();
-                ucdays.days(i);
+                ucdays.days(i, this.month, this.year);
                 daycontainer.Controls.Add(ucdays);
             }
         }
@@ -70,7 +68,7 @@ namespace CalendarApp
                 for (int i = 1; i <= days; i++)
                 {
                     UserControlDays ucdays = new UserControlDays();
-                    ucdays.days(i);
+                    ucdays.days(i, this.month, this.year);
                     daycontainer.Controls.Add(ucdays);
                 }
             }
@@ -91,7 +89,7 @@ namespace CalendarApp
                 for (int i = 1; i <= days; i++)
                 {
                     UserControlDays ucdays = new UserControlDays();
-                    ucdays.days(i);
+                    ucdays.days(i, this.month, this.year);
                     daycontainer.Controls.Add(ucdays);
                 }
             }
@@ -118,7 +116,7 @@ namespace CalendarApp
                 for (int i = 1; i <= days; i++)
                 {
                     UserControlDays ucdays = new UserControlDays();
-                    ucdays.days(i);
+                    ucdays.days(i, this.month, this.year);
                     daycontainer.Controls.Add(ucdays);
                 }
             }
@@ -139,7 +137,7 @@ namespace CalendarApp
                 for (int i = 1; i <= days; i++)
                 {
                     UserControlDays ucdays = new UserControlDays();
-                    ucdays.days(i);
+                    ucdays.days(i, this.month, this.year);
                     daycontainer.Controls.Add(ucdays);
                 }
             }
@@ -177,7 +175,6 @@ namespace CalendarApp
                 this.WindowState = FormWindowState.Maximized;
             }
         }
-        int mouseX, mouseY;
         private void label1_MouseDown(object sender, MouseEventArgs e)
         {
             mouseX = MousePosition.X - this.Left;
