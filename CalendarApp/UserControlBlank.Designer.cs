@@ -36,7 +36,8 @@ namespace CalendarApp
             // 
             this.lblDaysv1.AutoSize = true;
             this.lblDaysv1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblDaysv1.Location = new System.Drawing.Point(16, 28);
+            this.lblDaysv1.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.lblDaysv1.Location = new System.Drawing.Point(3, 4);
             this.lblDaysv1.Name = "lblDaysv1";
             this.lblDaysv1.Size = new System.Drawing.Size(66, 19);
             this.lblDaysv1.TabIndex = 0;

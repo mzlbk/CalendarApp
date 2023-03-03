@@ -37,6 +37,7 @@ namespace CalendarApp
             for(int i = 1; i < dayoftheweek; i++)
             {
                 UserControlBlank ucblank = new UserControlBlank();
+                ucblank.days(i, this.month, this.year);
                 daycontainer.Controls.Add(ucblank);
             }
             for(int i = 1; i<=days; i++)
@@ -63,6 +64,7 @@ namespace CalendarApp
                 for (int i = 1; i < dayoftheweek; i++)
                 {
                     UserControlBlank ucblank = new UserControlBlank();
+                    ucblank.days(i, this.month, this.year);
                     daycontainer.Controls.Add(ucblank);
                 }
                 for (int i = 1; i <= days; i++)
@@ -84,6 +86,7 @@ namespace CalendarApp
                 for (int i = 1; i < dayoftheweek; i++)
                 {
                     UserControlBlank ucblank = new UserControlBlank();
+                    ucblank.days(i, this.month, this.year);
                     daycontainer.Controls.Add(ucblank);
                 }
                 for (int i = 1; i <= days; i++)
@@ -111,6 +114,7 @@ namespace CalendarApp
                 for (int i = 1; i < dayoftheweek; i++)
                 {
                     UserControlBlank ucblank = new UserControlBlank();
+                    ucblank.days(i, this.month, this.year);
                     daycontainer.Controls.Add(ucblank);
                 }
                 for (int i = 1; i <= days; i++)
@@ -132,6 +136,7 @@ namespace CalendarApp
                 for (int i = 1; i < dayoftheweek; i++)
                 {
                     UserControlBlank ucblank = new UserControlBlank();
+                    ucblank.days(i, this.month, this.year);
                     daycontainer.Controls.Add(ucblank);
                 }
                 for (int i = 1; i <= days; i++)
